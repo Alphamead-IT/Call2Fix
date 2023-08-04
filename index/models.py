@@ -38,7 +38,7 @@ class IndexPage(Page):
     content_panels = Page.content_panels + [
         MultiFieldPanel(
             [
-                InlinePanel('carousel_images', label="Carousel Images", max_num=3, min_num=1)
+                InlinePanel('carousel_images', label="Carousel Images", max_num=5, min_num=1)
                 ],
                 heading="Carousel Images", 
         ),
