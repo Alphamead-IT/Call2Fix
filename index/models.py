@@ -34,7 +34,7 @@ class CarouselImage(Orderable):
 
 
 class IndexPage(Page):
-    header_image = models.ForeignKey("wagtailimages.image", on_delete=models.SET_NULL, null=True, blank=True, related_name="+")
+    why_choose_us_image = models.ForeignKey("wagtailimages.image", on_delete=models.SET_NULL, null=True, blank=True, related_name="+")
     content_panels = Page.content_panels + [
         MultiFieldPanel(
             [
@@ -42,9 +42,10 @@ class IndexPage(Page):
                 ],
                 heading="Carousel Images", 
         ),
-        FieldPanel("header_image",),
+        FieldPanel("why_choose_us_image",),
 
     ]
+    
 
 
 @register_snippet

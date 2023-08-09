@@ -1,6 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% load static wagtailimages_tags %}
+{% load wagtailcore_tags %}
 
 
 {% block content %}
@@ -198,7 +199,7 @@
     <div class="container py-5">
       <div class="row align-items-center gx-lg-0">
         <div class="col-lg-5">
-          <div class="bg-primary pe-lg-3"><img class="img-fluid w-100" style="height: 538.92px;" src="{% static 'img/guy12b.png' %}" alt=""></div>
+          <div class="bg-primary pe-lg-3"><img class="img-fluid w-100" style="height:538.92px;" src="{% image page.why_choose_us_image width-400 %}"></div>
         </div>
         <div class="col-lg-7">
           <div class="p-4 p-md-5 shadow bg-white">
