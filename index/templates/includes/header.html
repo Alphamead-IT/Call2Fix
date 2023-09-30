@@ -3,10 +3,10 @@
 {% header_config as header %}
 
 <header class="header">
-    <div class="top-bar bg-dark text-white">
+    <div class="top-bar bg-success text-white">
       <div class="container">
         <div class="row gx-0">
-          <div class="col-lg-4 bg-primary py-2 text-center text-lg-start d-none d-lg-flex align-items-center">
+          <div class="col-lg-4 bg-success py-2 text-center text-lg-start d-none d-lg-flex align-items-center">
             <p class="mb-0 text-sm"><i class="fas fa-clock me-2"></i>Opening hours: {{header.opening_hours}}</p>
           </div>
           <div class="col-lg-8 text-end py-2 text-center text-lg-end">
@@ -27,26 +27,42 @@
       <div class="container">
         <!-- <a class="navbar-brand" href="index.html"><img src="img/call2fix.png" alt="" width="50" height="50"></a> -->
         {% image header.logo fill-265x95 as img %}
-        <a class="navbar-brand" href="{{ header.home_url}}" style="display: inline-block; width: 265px; height: 95px; background-image: url('{{ img.url }}'); background-size: cover; background-position: center;"></a>
+        <a class="navbar-brand" href="{{ header.home_url}}" style="display: inline-block; width: 135px; height: 50px; background-image: url('{{ img.url }}'); background-size: cover; background-position: center;"></a>
 
         <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item mx-2">
-              <!-- Link--><a class="nav-link text-uppercase{% if request.path == header.home_url %} active{% endif %}" href="{{ header.home_url }}">Home</a>
+       
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link {% if request.path == header.home_url %} active{% endif %}" href="{{ header.home_url }}">Home</a></li>
+            <li class="nav-item dropdown menu-large"><a class="nav-link {% if request.path == header.earn_url %} active{% endif %}" href="{{ header.earn_url }}">Earn<b class="caret"></b></a>
+              <ul class="dropdown-menu megamenu">
+                <li>
+                    <div class="col-md-2 col-lg-3">
+                      <h5><a class="nav-link {% if request.path == header.earn_url %} active{% endif %}" href="{{ header.earn_url }}">Click&Earn</a></h5>
+                    </div>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item mx-2">
-              <!-- Link--><a class="nav-link text-uppercase{% if request.path == header.earn_url %} active{% endif %}" href="{{ header.earn_url }}">Earn</a>
+            <li class="nav-item dropdown menu-large"><a class="nav-link {% if request.path == header.service_url %} active{% endif %}" href="{{ header.service_url }}">Request<b class="caret"></b></a>
+              <ul class="dropdown-menu megamenu">
+                <li>
+                    <div class="col-md-2 col-lg-3">
+                      <h5><a class="nav-link {% if request.path == header.service_url %} active{% endif %}" href="{{ header.service_url }}" class="dropdown-toggle nav-link">Request ServiceS</a></h5>
+                    </div>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item mx-2">
-              <!-- Link--><a class="nav-link text-uppercase{% if request.path == header.service_url %} active{% endif %}" href="{{ header.service_url }}">Request a service</a>
-            </li>
-            <li class="nav-item mx-2">
-              <!-- Link--><a class="nav-link text-uppercase{% if 'alphamead.com' == request.get_host %} active{% endif %}" href="https://alphamead.com">Alpha Mead</a>
+            <li class="nav-item dropdown menu-large"><a class="nav-link {% if 'alphamead.com' == request.get_host %} active{% endif %}" href="https://alphamead.com">AMG<b class="caret"></b></a>
+              <ul class="dropdown-menu megamenu">
+                <li>
+                    <div class="col-md-2 col-lg-3">
+                      <h5><a class="nav-link {% if 'alphamead.com' == request.get_host %} active{% endif %}" href="https://alphamead.com">AlphaMead</a></h5>
+                    </div>
+                </li>
+              </ul>
             </li>
           </ul>
-        </div>
       </div>
     </nav>
+    
   </header>
   <!-- Hero Slider -->

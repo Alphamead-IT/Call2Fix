@@ -8135,6 +8135,11 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-grey {
+  --bs-bg-opacity: 1;
+  background-color: #f0f0f0;
+}
+
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
@@ -11967,7 +11972,7 @@ a.text-hover-dark:focus, a.text-hover-dark:hover {
 
 .hero-slide {
   position: relative;
-  min-height: 650px;
+  min-height: 500px;
   display: flex;
   align-items: center;
 }

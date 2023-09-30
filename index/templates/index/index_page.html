@@ -15,11 +15,11 @@
             <div class="swiper-slide hero-slide bg-size bg-center py-5" style="background: url('{{ img.url }}')">
             <div class="container text-white py-5 index-forward">
                 <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-12">
                     <h1> {{ loop_cycle.caption}}</h1>
                     <p class="lead">{{ loop_cycle.description }}</p>
                     <ul class="list-inline">
-                    <li class="list-inline-item me-0"><a class="btn btn-primary" href="#features">Read More</a></li>
+                    <li class="list-inline-item me-0"><a class="btn btn-success" href="#features">Read More</a></li>
                     </ul>
                 </div>
                 </div>
@@ -33,154 +33,198 @@
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section class="py-5 bg-light" id="features">
-    <div class="container py-5">
+  <section class="py-3 bg-grey">
+    <div class="container py-3">
       <div class="row">
-        <div class="col-lg-6 order-2 order-lg-1">
-          <p class="h6 mb-1 text-uppercase text-primary mb-3">Our main features</p>
-          <h2 class="mb-4">Who Are We?</h2>
-          <p class="text-sm text-muted">We connect you to professional building repair artisans closest to you anytime, anywhere. Like Uber, once you make a request, we will send you professional artisan(s) closest to you from our large pool of well-trained, pre-qualified, and service-oriented artisans. Call2Fix provides you with secure, safe, convenient, and reliable home and office repair services from the comfort of your phone.</p>
-          <ul class="list-check list-unstyled row px-3 mb-4 gy-2">
-            <li class="text-sm text-muted col-lg-6">
-              <div style="float: left; margin-right: 10px;">
-                <img src="{% static 'img/ISO-9001-2015.png' %}" alt="ISO Logo" style="height: 50px; width:50px;">
-              </div>
-              <strong>Backed by Alpha Mead</strong> Nigeria’s first FM Company Certified to ISO 9001:2015 by United Kingdom Accreditation Services (UKAS).
-            </li>
-            
-            <!--<li class="text-sm text-muted col-lg-6"><div style="float: left; margin-right: 10px;">
-              <img src="{% static 'img/ISO-9001-20151.png' %}" alt="ISO Logo">
-            </div><strong>Backed by Alpha Mead</strong> Nigeria’s first FM Company Certified to ISO 9001:2015 by United Kingdom Accreditation Services (UKAS).</li> -->
-            <li class="text-sm text-muted col-lg-6"><strong>Security and safety</strong> All artisans are screened on three levels and will have unique identification numbers that customer can use to verify them.</li>
-            <li class="text-sm text-muted col-lg-6"><strong>User rating system</strong>
-              Assigns jobs based on pre-defined criteria such as customer satisfaction and completed jobs</li>
-            <li class="text-sm text-muted col-lg-6"><strong>24/7 Support</strong>
-              Round the clock experience center available to users in need of guidance or re-work from service provider.</li>
+        <div class="col-lg-8 order-2 order-lg-1">
+          <p class="h3 mb-1 text-uppercase text-success mb-3 lined">WHO WE ARE</p>
+          <p class="text-sm text-muted">We connect you to professional building repair artisans closest to you anytime, anywhere. Like Uber, once you make a request, we will send you professional artisan(s) closest to you from our large pool of well-trained, pre-qualified, and service oriented artisans.
+            Call2Fix provides you with secure, safe, convenient, and reliable home and office repair services from the comfort of your phone..</p>
+            <p class="h3 mb-1 text-uppercase text-success lined mb-3">OUR MAIN FEATURES</p>
+            <ul class="list-check list-unstyled row px-3 mb-4 gy-2">
+            <li class="text-sm text-muted col-lg-12"><strong>Backed by Alpha Mead: </strong> Nigeria’s first FM Company Certified to ISO 9001:2015 by United Kingdom Accreditation Services (UKAS).</li>
+            <li class="text-sm text-muted col-lg-12"><strong>Security and safety:</strong> All artisans are screened on three levels and will have unique identification numbers that customer can use to verify them.</li>
+            <li class="text-sm text-muted col-lg-12"><strong>User rating system:</strong> Assigns jobs based on pre-defined criteria such as customer satisfaction and completed jobs</li>
+            <li class="text-sm text-muted col-lg-12"><strong>24/7 Support:</strong> Round the clock experience center available to users in need of guidance or re-work from service provider.</li>
           </ul>
           <ul class="list-inline py-4 border-top border-bottom d-flex align-items-center">
-            {% comment %} <li class="list-inline-item pr-4 mr-0"><img src="{% static 'img/about-sign.png' %}" alt="" width="80"></li> {% endcomment %}
-            <li class="list-inline-item pr-4 mr-0">
-              <h5 class="mb-0">Download our App</h5>
-            </li>
-            <li class="list-inline-item px-4 border-left">
-              <a href="https://apps.apple.com/ng/app/call2fix/id1483186601"><img class="mb-0" alt='Get it on Apple Store' src="{% static 'img/App_Store_Badge.svg' %}"></a>
-              {% comment %} <p class="small font-weight-normal text-muted mb-0">Call to ask any question</p> {% endcomment %}
-            </li>
-            <li class="list-inline-item pl-4 border-left">
-              <a href="https://play.google.com/store/apps/details?id=com.tulabyte.call2fix&hl=en&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt='Get it on Google Play' src="{% static 'img/google-play-badge1.png'%}" class="google-badge" /></a>
-            </li>
+            
+              <li class="list-inline-item pr-4 mr-0">
+                <h5 class="mb-0"><strong>Download App:</strong></h5>
+              </li>
+              <li class="list-inline-item px-4 border-left">
+                <a href="https://apps.apple.com/ng/app/call2fix/id1483186601"><img class="mb-0" alt='Get it on Apple Store' src="{% static 'img/App_Store_Badge.svg' %}"></a>
+              </li>
+              <li class="list-inline-item pl-4 border-left">
+                <a href="https://play.google.com/store/apps/details?id=com.tulabyte.call2fix&hl=en&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt='Get it on Google Play' src="{% static 'img/google-play-badge1.png'%}" class="google-badge" /></a>
+              </li>
+              <li class="list-inline-item pr-4 mr-0">
+                <h5 class="mb-0"></h5>
+              </li>
+              <li class="rounded float-right list-inline-item pr-4 mr-0"><img src="{% static 'img/ISO-9001-2015.png' %}" alt="ISO Logo" style="height: 90px; width:90px;"></li>
+            
           </ul>
         </div>
-        <div class="col-lg-5 ms-auto mb-4 mb-lg-0 order-1 order-lg-2">
-          <div class="p-2 border">
-            <img class="img-fluid" style="height:470.76px;"src="{% static 'img/about_image.jpg' %}" alt=""></div>
+        <div class="col-lg-4 ms-auto mb-3 mb-lg-0 order-1 order-lg-2">
+          <div class="p-2 border"><img class="img-fluid" src="{% static 'img/about_image.jpg' %}"  alt=""></div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Services Section -->
-  <section class="py-5">
-    <div class="container py-5 text-center">
-      <header class="mb-5">
-        <div class="row">
-          <div class="col-lg-7 mx-auto">
-            <p class="h6 text-uppercase text-primary mb-0">Our services</p>
-            <h2>What can you do with Call2Fix?</h2>
-          </div>
-        </div>
+
+  <section class="bg-cover bg-center bg-light" style="background: url('{% static "img/call2fix-earn-banner.jpg" %}')">
+    <div class="container pb-3">
+      <header class="text-center mb-5">
+        <div class="col-lg-12 text-center text-light pt-4"><a class="btn btn-outline-light" href="#!"><h3>OUR SERVICES</h3></a></div>
       </header>
-      <div class="row align-items-stretch gy-4">
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/broken-cable.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Electrical Repair &amp; Maintenance</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+      <div class="row text-center gy-4">
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-3">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!stack-1"> </use>
+                  </svg>
+                 
+                      <img src="{% static 'img/broken-cable.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                      <h3 class="h5">Electrical Repair &amp; Maintenance</h3>
+                 
+                
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/civil-work.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Building &amp; Civil Works</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-4">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!pie-chart-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/civil-work.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">Building &amp; Civil Works</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/pipe.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Plumbing</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-4">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!design-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/pipe.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                        <h3 class="h5">Plumbing</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/minisplit.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">HVAC/Air Conditioning</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-4">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!mental-health-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/minisplit.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">HVAC/Air Conditioning</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/plant-a-tree.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Enviromental Services</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-4">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!bookmark-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/plant-a-tree.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">Enviromental Services</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/frontal-truck.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Equipment Leasing</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-4">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!checked-window-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/frontal-truck.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">Equipment Leasing</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/cleaning-spray-bottle-2.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Cleaning Services</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-4">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!list-details-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/cleaning-spray-bottle-2.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">Cleaning Services</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/fire-alarm.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Fire Systems &amp; Security</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-4">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!sales-up-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/fire-alarm.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">Fire Systems &amp; Security</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/generator.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Generator Maintenance</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-4">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!list-details-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/generator.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">Generator Maintenance</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/smart-washing-machine.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Domestic Appliances Repair &amp; Maintenance</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-3">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!sales-up-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/smart-washing-machine.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">Domestic Appliances Repair &amp; Maintenance</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/printer.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Office Equipment Repair &amp; Maintenance</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-3">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!list-details-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/printer.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">Office Equipment Repair &amp; Maintenance</h3>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="px-4 py-5 border border-2 border-dash h-100">
-            <img src="{% static 'img/office-chair.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
-            <h3 class="h5">Furniture &amp; Carpentry Services</h3>
-            {% comment %} <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> {% endcomment %}
+        <div class="col-lg-2 px-lg-2">
+          <div class="categories-item card border-0 shadow hover-transition">
+            <div class="card-body px-2 py-3">
+                  <svg class="svg-icon mb-3">
+                    <use xlink:href="#!sales-up-1"> </use>
+                  </svg>
+                  <img src="{% static 'img/office-chair.png' %}" class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                  <h3 class="h5">Furniture &amp; Carpentry Services</h3>
+            </div>
           </div>
+        </div>
+        
+        <div class="text-center pt-2">
+          <p class="h2 fw-light mb-3 text-light">Do you wish to know more?</p><a class="btn btn-outline-light" href="">Contact us now!</a><br>
         </div>
       </div>
     </div>
   </section>
+    
+
   <!-- Divider Section -->
   <section class="bg-cover bg-center" style="background: url('{% static "img/call2fix-earn-banner.jpg" %}')">
-    <div class="primary-overlay py-5">
+    <div class="primary-overlay py-2">
       <div class="overlay-content">
         <div class="container">
           <div class="row align-items-center gy-4">
@@ -188,40 +232,39 @@
               <h2 class="text-white mb-2">Register as Service Provider &amp; Start Earning</h2>
               <p class="text-white mb-0">Increase transactions, acquire new customers - no marketing budget needed.</p>
             </div>
-            <div class="col-lg-3 ms-auto text-center text-lg-end"><a class="btn btn-outline-light" href="http://call2fix.com.ng/earn-from-call2fix/">Start Earning</a></div>
+            <div class="col-lg-3 ms-auto text-center text-lg-start"><a class="btn btn-outline-light" href="http://call2fix.com.ng/earn-from-call2fix/">Start Earning</a></div>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- Features Section -->
-  <section class="py-5 bg-light">
-    <div class="container py-5">
+  <section class="py-3 bg-light">
+    <div class="container py-3">
       <div class="row align-items-center gx-lg-0">
         <div class="col-lg-5">
-          <div class="bg-primary pe-lg-3"><img class="img-fluid w-100" style="height:538.92px;" src="{% image page.why_choose_us_image width-400 %}"></div>
+          <div class="bg-success pe-lg-3"><img class="img-fluid" src="{% static 'img/call2fix-man.png' %}"  alt=""></div>  
         </div>
         <div class="col-lg-7">
           <div class="p-4 p-md-5 shadow bg-white">
-            <p class="h6 mb-1 text-uppercase text-primary mb-3">Why choose us</p>
-            <h2 class="mb-5">Call2Fix Solutions</h2>
+            <p class="h2 mb-1 text-uppercase text-success mb-3">Why choose us</p>
             <div class="row">
-              <div class="col-lg-9">
+              <div class="col-lg-12">
                 <ol class="list-numbers mb-0">
                   <li class="mb-4">
-                    <h5>Tracking System </h5>
+                    <h5><strong>System </strong> </h5>
                     <p class="text-sm text-muted">The app allows you to track all your requests from the comfort of your phone.</p>
                   </li>
                   <li class="mb-4">
-                    <h5>Marketplace</h5>
+                    <h5><strong>Marketplace</strong></h5>
                     <p class="text-sm text-muted">You get to buy building materials or rent equipment directly from the vendors on the app.</p>
                   </li>
                   <li class="mb-4">
-                    <h5>Video Briefing Feature</h5>
+                    <h5><strong>Briefing Feature</strong> </h5>
                     <p class="text-sm text-muted">You can share videos with Artisans to get an accurate scope of repair work to be done in your building. </p>
                   </li>
                   <li>
-                    <h5>Bidding Process</h5>
+                    <h5><strong>Process</strong> </h5>
                     <p class="text-sm text-muted">You get up to five price quotations from different vendors for you to choose from. </p>
                   </li>
                 </ol>
@@ -233,21 +276,23 @@
     </div>
   </section>
   <!-- Video Section -->
-  <section class="bg-center bg-cover" style="background: url("{% static 'img/hero-banner-3.jpg' %}")">
-    <div class="dark-overlay py-5">
+  <section class="bg-center bg-cover" style="background: url('{% static "img/hero-banner-2.jpg" %}')">
+    <div class="dark-overlay py-2">
       <div class="overlay-content text-white">
-        <div class="container py-5">
+        <div class="container py-2">
           <header class="text-center">
             <div class="row">
               <div class="col-lg-9 mx-auto">
                 <button class="video-btn mb-5" type="button" data-video-id="NOG3eus4ZSo"><i class="fas fa-play"></i></button>
-                <p class="h6 mb-1 text-uppercase text-primary mb-3">We make a difference</p>
-                <h2 class="h1 mb-5">The Best Solutions For Developing Your Business</h2><a class="btn btn-primary" href="#!">View more services</a>
+                <p class="h6 mb-1 text-uppercase text-success mb-3">We make a difference</p>
+                <h2 class="h2 mb-5">You call, we fix</h2><a class="btn btn-success" href="#!">View more services</a>
               </div>
             </div>
           </header>
         </div>
       </div>
     </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      
   </section>
 {% endblock content %}
